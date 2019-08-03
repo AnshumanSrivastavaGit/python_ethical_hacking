@@ -34,8 +34,8 @@
 
 | Program           | Description                                                                                               |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
-| mac_changer       | changes MAC Address to anything we want.                                                                  |
-| network_scanner   | scans network and discovers the IP and MAC address of all connected clients.                              |
+| [MAC Changer](./mac_changer.py) | changes MAC Address to anything we want. |
+| [Network Scanner](./network_scanner.py) | scans network and discovers the IP and MAC address of all connected clients. |
 | arp_spoofer       | runs an arp spoofing attack to redirect the flow of packets in the network allowing us to intercept data. |
 | packet_sniffer    | filters intercepted data and shows usernames, passwords, visited links ....etc                            |
 | dns_spoofer       | redirects DNS requests, eg: redirects requests to from one domain to another.                             |
