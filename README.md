@@ -2,7 +2,7 @@
 
 ## Description
 
-* This repository contains a collection of ethical hacking programs such as backdoors, keyloggers, credential harvesters, network hacking tooks and website hacking tools written in Python.
+* This repository contains a collection of ethical hacking programs such as backdoors, keyloggers, credential harvesters, and network/website monitoring tools written in Python.
 
 ## Learning Objectives
 
@@ -36,7 +36,7 @@
 |-------------------|-----------------------------------------------------------------------------------------------------------|
 | [MAC Changer](./mac_changer.py) | changes MAC Address to anything we want. |
 | [Network Scanner](./network_scanner.py) | scans network and discovers the IP and MAC address of all connected clients. |
-| arp_spoofer       | runs an arp spoofing attack to redirect the flow of packets in the network allowing us to intercept data. |
+| [Arp Spoofer](./arp_spoofer.py) | runs an arp spoofing attack to redirect the flow of packets in the network allowing us to intercept data. |
 | packet_sniffer    | filters intercepted data and shows usernames, passwords, visited links ....etc                            |
 | dns_spoofer       | redirects DNS requests, eg: redirects requests to from one domain to another.                             |
 | file_interceptor  | replaces intercepted files with any file we want.                                                         |
@@ -56,7 +56,7 @@
 
 ## Usage
 
-* All files were created and compiled on Mac OS X 10.11 with Python3 (version 3.7)
+* All files were created and compiled on Mac OS X 10.11 and Linux Kali with Python3 (version 3.7)
 
 ## Awknowledgements
 
