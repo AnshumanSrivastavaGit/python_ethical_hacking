@@ -2,6 +2,7 @@
 
 """
 Packet Sniffer
+- sniffs packets for usernames/passwords on given network interface
 """
 
 import scapy.all as scapy
@@ -9,9 +10,8 @@ from scapy_http import http
 
 
 def sniff(interface):
-    # store = where packets are stored
+    # store = whether or not packets are stored
     # prn = callback func
-    # easy way
     scapy.sniff(
             iface=interface,
             store=False,
