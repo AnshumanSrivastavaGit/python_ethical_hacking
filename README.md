@@ -6,38 +6,38 @@
 
 ## Learning Objectives
 
-* Basics of network hacking / penetration testing.
-* Changing MAC address & bypassing filtering.
-* Network mapping.
-* ARP Spoofing - redirect the flow of packets in a network.
-* DNS Spoofing - Redirect requests from one website to another.
-* Spying on any client connected to the network - see usernames, passwords, visited urls ....etc.
-* Inject code in pages loaded by any computer connected to the same network.
-* Replace files on the fly as they get downloaded by any computer on the same network.
-* Detect ARP spoofing attacks.
-* Bypass HTTPS.
-* Create malware for Windows, OS X and Linux.
-* Create trojans for Windows, OS X and Linux.
-* Hack Windows, OS X and Linux using custom backdoor.
-* Bypass Anti-Virus programs.
-* Use fake login prompt to steal credentials.
-* Display fake updates.
-* Use own keylogger to spy on everything typed on a Windows or OS X computer.
-* Learn the basics of website hacking / penetration testing.
-* Discover subdomains.
-* Discover hidden files and directories in a website.
-* Run wordlist attacks to guess login information.
-* Discover and exploit XSS vulnerabilities.
-* Discover weaknesses in websites using own vulnerability scanner.
+* Basics of network hacking / penetration testing
+* Changing MAC address & bypassing filtering
+* Network mapping
+* ARP Spoofing - redirect the flow of packets in a network
+* DNS Spoofing - Redirect requests from one website to another
+* Spying on any client connected to the network - see usernames, passwords, visited urls ....etc
+* Inject code in pages loaded by any computer connected to the same network
+* Replace files on the fly as they get downloaded by any computer on the same network
+* Detect ARP spoofing attacks
+* Bypass HTTPS
+* Create malware for Windows, OS X and Linux
+* Create trojans for Windows, OS X and Linux
+* Hack Windows, OS X and Linux using custom backdoor
+* Bypass Anti-Virus programs
+* Use fake login prompt to steal credentials
+* Display fake updates
+* Use own keylogger to spy on everything typed on a Windows or OS X computer
+* Learn the basics of website hacking / penetration testing
+* Discover subdomains
+* Discover hidden files and directories in a website
+* Run wordlist attacks to guess login information
+* Discover and exploit XSS vulnerabilities
+* Discover weaknesses in websites using own vulnerability scanner
 
 ## Tasks
 
 | Program           | Description                                                                                               |
 |-------------------|-----------------------------------------------------------------------------------------------------------|
-| [MAC Changer](./mac_changer.py) | changes MAC Address to anything we want. |
-| [Network Scanner](./network_scanner.py) | scans network and discovers the IP and MAC address of all connected clients. |
-| [Arp Spoofer](./arp_spoofer.py) | runs an arp spoofing attack to redirect the flow of packets in the network allowing us to intercept data. |
-| packet_sniffer    | filters intercepted data and shows usernames, passwords, visited links ....etc                            |
+| [MAC Changer](./mac_changer.py) | changes MAC Address to anything user inputs |
+| [Network Scanner](./network_scanner.py) | scans network and discovers the IP and MAC address of all connected clients |
+| [Arp Spoofer](./arp_spoofer.py) | runs an arp spoofing attack to redirect the flow of packets in the network allowing user to intercept data |
+| Packet Sniffer | filters intercepted data and shows usernames, passwords, visited links ....etc |
 | dns_spoofer       | redirects DNS requests, eg: redirects requests to from one domain to another.                             |
 | file_interceptor  | replaces intercepted files with any file we want.                                                         |
 | code_injector     | injects code in intercepted HTML pages.                                                                   |
