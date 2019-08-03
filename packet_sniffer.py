@@ -2,7 +2,6 @@
 
 """
 Packet Sniffer
-
 """
 
 import scapy.all as scapy
@@ -18,6 +17,7 @@ def sniff(interface):
             store=False,
             prn=process_sniffed_packet
             )
+
 
 def get_url(packet):
     host = packet[http.HTTPRequest].Host or ""
@@ -40,8 +40,9 @@ def process_sniffed_packet(packet):
         print("[+] HTTP Request >> " + str(url))
         login_info = get_login(packet)
         if login_info:
-            print("\n\n[+] Possible username/password > " + login_info + "\n\n")
-        
+            print("\n\n[+] Possible username/password > " +
+                  login_info +
+                  "\n\n")
 
 
 sniff("eth0")
