@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Network Scanner
 - Discover all devices on the network
